@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import AVFoundation
+import CoreData
 
 class ViewController: UIViewController {
 
+    var highScore = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // saves score
+        let defaults: UserDefaults = UserDefaults.standard
+        let savedScore = defaults.integer(forKey: "highScore")
+        highScore = savedScore
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! GameViewController
+        vc.highScore = highScore
     }
-
-
 }
 

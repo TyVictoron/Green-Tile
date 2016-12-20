@@ -15,6 +15,11 @@
 		10393A091E08DF710089F9E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10393A071E08DF710089F9E4 /* LaunchScreen.storyboard */; };
 		10393A141E08DF720089F9E4 /* Green_TileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10393A131E08DF720089F9E4 /* Green_TileTests.swift */; };
 		10393A1F1E08DF720089F9E4 /* Green_TileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10393A1E1E08DF720089F9E4 /* Green_TileUITests.swift */; };
+		10393A2D1E08E3260089F9E4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10393A2C1E08E3260089F9E4 /* GameViewController.swift */; };
+		10393A2F1E08E3320089F9E4 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10393A2E1E08E3320089F9E4 /* EndViewController.swift */; };
+		10393A311E08E5E70089F9E4 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10393A301E08E5E70089F9E4 /* CellController.swift */; };
+		10393A391E08F8B00089F9E4 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10393A371E08F8B00089F9E4 /* wrong.mp3 */; };
+		10393A3A1E08F8B00089F9E4 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10393A381E08F8B00089F9E4 /* correct.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		10393A1A1E08DF720089F9E4 /* Green TileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green TileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10393A1E1E08DF720089F9E4 /* Green_TileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_TileUITests.swift; sourceTree = "<group>"; };
 		10393A201E08DF720089F9E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10393A2C1E08E3260089F9E4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		10393A2E1E08E3320089F9E4 /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		10393A301E08E5E70089F9E4 /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		10393A371E08F8B00089F9E4 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		10393A381E08F8B00089F9E4 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 				10393A121E08DF720089F9E4 /* Green TileTests */,
 				10393A1D1E08DF720089F9E4 /* Green TileUITests */,
 				103939F91E08DF710089F9E4 /* Products */,
+				10393A361E08F0DC0089F9E4 /* Sounds */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +112,9 @@
 			children = (
 				103939FB1E08DF710089F9E4 /* AppDelegate.swift */,
 				103939FD1E08DF710089F9E4 /* ViewController.swift */,
+				10393A2C1E08E3260089F9E4 /* GameViewController.swift */,
+				10393A2E1E08E3320089F9E4 /* EndViewController.swift */,
+				10393A301E08E5E70089F9E4 /* CellController.swift */,
 				103939FF1E08DF710089F9E4 /* Main.storyboard */,
 				10393A051E08DF710089F9E4 /* Assets.xcassets */,
 				10393A071E08DF710089F9E4 /* LaunchScreen.storyboard */,
@@ -126,6 +140,15 @@
 				10393A201E08DF720089F9E4 /* Info.plist */,
 			);
 			path = "Green TileUITests";
+			sourceTree = "<group>";
+		};
+		10393A361E08F0DC0089F9E4 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				10393A371E08F8B00089F9E4 /* wrong.mp3 */,
+				10393A381E08F8B00089F9E4 /* correct.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +263,8 @@
 			files = (
 				10393A091E08DF710089F9E4 /* LaunchScreen.storyboard in Resources */,
 				10393A061E08DF710089F9E4 /* Assets.xcassets in Resources */,
+				10393A391E08F8B00089F9E4 /* wrong.mp3 in Resources */,
+				10393A3A1E08F8B00089F9E4 /* correct.mp3 in Resources */,
 				10393A011E08DF710089F9E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10393A2D1E08E3260089F9E4 /* GameViewController.swift in Sources */,
+				10393A2F1E08E3320089F9E4 /* EndViewController.swift in Sources */,
 				103939FE1E08DF710089F9E4 /* ViewController.swift in Sources */,
+				10393A311E08E5E70089F9E4 /* CellController.swift in Sources */,
 				103939FC1E08DF710089F9E4 /* AppDelegate.swift in Sources */,
 				10393A041E08DF710089F9E4 /* Green_Tile.xcdatamodeld in Sources */,
 			);
