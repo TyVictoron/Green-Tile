@@ -19,7 +19,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var score = 0
     var time = 3
     var timer = Timer()
-    var random = (Int)(arc4random_uniform(4))
+    var random = 0
     var correct = AVAudioPlayer()
     var wrong = AVAudioPlayer()
     
